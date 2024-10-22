@@ -1,0 +1,16 @@
+name: Even
+on:
+  workflow_dispatch:
+#  push:
+#  pull_request:
+#  schedule:
+    # At 12:55 every Saturday
+#    - cron:  '55 12 * * *'
+jobs:
+  refresh_nameservers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run operations
+        run: |
+              
